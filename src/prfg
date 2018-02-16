@@ -4,19 +4,24 @@ import argparse
 import random
 
 
+# creates a bytearray of given size filled with a sequence of pseudorandomly generated values based on the given seed
 def pseudo_random_bytearray(seed, size):
+    # initializes the pseudorandom generator with the given seed
     random.seed(seed)
+    # generates and returns the bytearray
     return bytearray(random.getrandbits(8) for _ in range(0, 1024 * 1024 * int(size)))
 
 
 if __name__ == '__main__':
-    argparser = argparse.ArgumentParser()
+    # argumentparser : the best way to handle program arguments in python
+    argparser = argparse.ArgumentParser(description="Pseudorandom File Generator.")
 
-    argparser.add_argument("seed", nargs="?")
-    argparser.add_argument("size", nargs="?")
-    argparser.add_argument("output", nargs="?")
+    argparser.add_argument("seed", nargs="?", help="seed of the pseudorandom generator")
+    argparser.add_argument("size", nargs="?", help="size of the generated file")
+    argparser.add_argument("filename", nargs="?", help="name of the generated file")
 
     args = argparser.parse_args()
 
-    with open(args.output, "wb") as f:
+    # writes the contents of the bytearray into the file
+    with open(args.filename, "wb") as f:
         f.write(pseudo_random_bytearray(args.seed, args.size))

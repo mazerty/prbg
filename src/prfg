@@ -14,7 +14,7 @@ def pseudo_random_bytearray(seed, size):
 
 if __name__ == '__main__':
     # argumentparser : the best way to handle program arguments in python
-    argparser = argparse.ArgumentParser(description="Pseudorandom File Generator.")
+    argparser = argparse.ArgumentParser(description="Pseudorandom file generator.")
 
     argparser.add_argument("seed", help="seed of the pseudorandom generator")
     argparser.add_argument("size", help="size of the generated file")

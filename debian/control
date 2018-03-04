@@ -1,0 +1,11 @@
+Source: prfg
+Section: utils
+Priority: optional
+Maintainer: Thomas JOUANNOT (Mazerty) <mazerty@gmail.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.7
+
+Package: prfg
+Architecture: all
+Depends: ${misc:Depends}, python3
+Description: Pseudorandom file generator

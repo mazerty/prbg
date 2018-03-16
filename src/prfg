@@ -13,7 +13,7 @@ def pseudo_random_bytearray(seed, size):
     return bytearray(random.getrandbits(8) for _ in range(0, int(size)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # argumentparser : the best way to handle program arguments in python
     argparser = argparse.ArgumentParser(description="Pseudorandom file generator.")
 

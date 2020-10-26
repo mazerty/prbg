@@ -1,3 +1,9 @@
+prfg (1.1.0-0ubuntu1) bionic; urgency=medium
+
+  * extracted the code into a library
+
+ -- Thomas JOUANNOT (Mazerty) <mazerty@gmail.com>  Mon, 26 Oct 2020 11:25:00 +0100
+
 prfg (1.0.0-0ubuntu1) xenial; urgency=medium
 
   * Initial release

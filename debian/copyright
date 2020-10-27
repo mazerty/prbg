@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: prfg
-Source: https://github.com/mazerty/prfg
+Upstream-Name: prbg
+Source: https://github.com/mazerty/prbg
 
 Files: *
 Copyright: 2018 Thomas JOUANNOT (Mazerty) <mazerty@gmail.com>

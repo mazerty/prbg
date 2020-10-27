@@ -1,2 +1,2 @@
-src/prfg.py /usr/lib/python3/dist-packages
-src/prfg /usr/bin
+src/prbg.py /usr/lib/python3/dist-packages
+src/prbg /usr/bin

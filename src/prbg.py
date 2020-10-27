@@ -1,7 +1,7 @@
 import random
 
 
-# creates a bytearray of given size filled with a sequence of pseudorandomly generated values based on the given seed
+# creates a bytearray of given size filled with a sequence of pseudorandom generated values based on the given seed
 def pseudo_random_bytearray(seed, size):
     # initializes the pseudorandom generator with the given seed
     random.seed(seed)

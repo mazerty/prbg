@@ -7,7 +7,7 @@
 mkdir tmp
 
 # test
-../src/prfg test 128 > tmp/test
+../src/prbg test 128 > tmp/test
 diff tmp/test results/test
 
 # cleans tmp directory

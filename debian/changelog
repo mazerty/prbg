@@ -2,6 +2,7 @@ prbg (1.0.0-0ubuntu1) bionic; urgency=medium
 
   * fix readme since we now have two files
   * renamed into prbg
+  * added writing to a file
 
  -- Thomas JOUANNOT (Mazerty) <mazerty@gmail.com>  Tue, 27 Oct 2020 16:42:00 +0100
 

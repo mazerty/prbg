@@ -6,9 +6,13 @@
 # creates tmp directory
 mkdir tmp
 
-# test
+# test 1
 ../src/prbg test 128 > tmp/test
 diff tmp/test results/test
+
+# test 2
+../src/prbg test 128 tmp/test2
+diff tmp/test2 results/test
 
 # cleans tmp directory
 rm -rf tmp
